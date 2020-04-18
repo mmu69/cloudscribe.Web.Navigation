@@ -6,44 +6,74 @@
         <NavNode key="AboutMe" controller="Home" action="AboutMe" area="" preservedRouteParameters="culture" text="About Me" iconCssClass="glyphicon glyphicon-user">
           <Children />
         </NavNode>
-          <NavNode key="AboutCompany" controller="Home" action="AboutCompany" area="" preservedRouteParameters="culture" text="About Company" iconCssClass="glyphicon glyphicon-knight">
-              <Children />
-          </NavNode>
-          <NavNode key="AboutProject" controller="Home" action="AboutProject" area="" preservedRouteParameters="culture" text="About Project" iconCssClass="glyphicon glyphicon-sunglasses">
-              <Children />
-          </NavNode>
+        <NavNode key="AboutCompany" controller="Home" action="AboutCompany" area="" preservedRouteParameters="culture" text="About Company" iconCssClass="glyphicon glyphicon-knight">
+          <Children />
+        </NavNode>
+        <NavNode key="AboutProject" controller="Home" action="AboutProject" area="" preservedRouteParameters="culture" text="About Project" iconCssClass="glyphicon glyphicon-sunglasses">
+          <Children />
+        </NavNode>
       </Children>
     </NavNode>
 
-
-<!--<NavNode key="Service" controller="Company" action="Services" area="" text="Service" iconCssClass=""></NavNode>
+    <NavNode key="Submenus" text="Submenus">
+      <Children>
+        <NavNode key="Sub 1" text="Sub 1">
+          <Children>
+            <NavNode key="Sub1.1" text="Sub1.1">
+              <Children>
+                <NavNode key="Sub1.1.1" text="Sub1.1.1">
+                  <Children />
+                </NavNode>
+                <NavNode key="Sub1.1.2" text="Sub1.1.2">
+                  <Children />
+                </NavNode>
+              </Children>
+            </NavNode>
+            <NavNode key="Sub1.2" text="Sub1.2">
+              <Children />
+            </NavNode>
+          </Children>
+        </NavNode>
+        <NavNode key="Sub2" text="Sub2">
+          <Children>
+            <NavNode key="Sub2.1" text="Sub2.1">
+              <Children />
+            </NavNode>
+            <NavNode key="Sub2.2" text="Sub2.2">
+              <Children />
+            </NavNode>
+          </Children>
+        </NavNode>
+      </Children>
+    </NavNode>
+    <!--<NavNode key="Service" controller="Company" action="Services" area="" text="Service" iconCssClass=""></NavNode>
     <NavNode key="Company" controller="Company" action="Index" area="" text="Company" iconCssClass=""></NavNode>-->
 
-    
-    
+
+
     <NavNode key="Contact" controller="Home" action="Contact" area="" preservedRouteParameters="culture" text="Contact" >
       <Children />
-        <DataAttributes>
-            <DataAttribute attribute="data-foo" value="bar" />
-            <DataAttribute attribute="data-foo2" value="baz" />
-        </DataAttributes>
+      <DataAttributes>
+        <DataAttribute attribute="data-foo" value="bar" />
+        <DataAttribute attribute="data-foo2" value="baz" />
+      </DataAttributes>
     </NavNode>
     <!--<NavNode key="OverviewWhatever" text="Whatever Overview" namedRoute="OverviewWhatever" />
     <NavNode key="OverviewIndex" text="Overview" namedRoute="OverviewIndex" />-->
-    
-      <NavNode key="area51" area="Area51" controller="Roswell" action="Index" preservedRouteParameters="culture" text="Area 51" >
-          <Children>
-            <NavNode key="areahome" area="Area51" controller="Home" action="Index" preservedRouteParameters="culture" text="Home">
-              <Children />
-            </NavNode>
-              <NavNode key="aliens" area="Area51" controller="Roswell" action="Aliens" preservedRouteParameters="culture" text="Aliens">
-                  <Children />
-              </NavNode>
-              <NavNode key="mib" area="Area51" controller="Roswell" action="MenInBlack" preservedRouteParameters="culture" text="Men In Black">
-                  <Children />
-              </NavNode>
-          </Children>
-      </NavNode>
+
+    <NavNode key="area51" area="Area51" controller="Roswell" action="Index" preservedRouteParameters="culture" text="Area 51" >
+      <Children>
+        <NavNode key="areahome" area="Area51" controller="Home" action="Index" preservedRouteParameters="culture" text="Home">
+          <Children />
+        </NavNode>
+        <NavNode key="aliens" area="Area51" controller="Roswell" action="Aliens" preservedRouteParameters="culture" text="Aliens">
+          <Children />
+        </NavNode>
+        <NavNode key="mib" area="Area51" controller="Roswell" action="MenInBlack" preservedRouteParameters="culture" text="Men In Black">
+          <Children />
+        </NavNode>
+      </Children>
+    </NavNode>
     <NavNode key="Members" controller="Home" action="Members" area="" preservedRouteParameters="culture" text="Members" authorizationPolicy="MembersPolicy">
       <Children />
     </NavNode>
@@ -51,24 +81,24 @@
       <Children />
     </NavNode>
 
-      <NavNode key="HideFromAuthenticated"
-             controller="Home"
-             action="HideAuth"
-             text="Hide From Authenticated"
-             hideFromAuthenticated="true"
-               preservedRouteParameters="culture"
+    <NavNode key="HideFromAuthenticated"
+           controller="Home"
+           action="HideAuth"
+           text="Hide From Authenticated"
+           hideFromAuthenticated="true"
+             preservedRouteParameters="culture"
                >
-          <Children />
-      </NavNode>
-      <NavNode key="HideFromAnonymous"
-             controller="Home"
-             action="HideAnon"
-             text="Hide From Anonymous"
-             hideFromAnonymous="true"
-               preservedRouteParameters="culture"
+      <Children />
+    </NavNode>
+    <NavNode key="HideFromAnonymous"
+           controller="Home"
+           action="HideAnon"
+           text="Hide From Anonymous"
+           hideFromAnonymous="true"
+             preservedRouteParameters="culture"
                >
-          <Children />
-      </NavNode>
-  
+      <Children />
+    </NavNode>
+
   </Children>
 </NavNode>
